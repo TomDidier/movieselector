@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 Two databases need to be install from Kaggle:
 
 1. First database: [Metadata on 5,000 movies from TMDB](https://www.kaggle.com/tmdb/tmdb-movie-metadata)
-2. Second database: [Metadata on over 45,000 movies. 26 million ratings from over 270,000 users](https://www.kaggle.com/rounakbanik/the-movies-dataset)
+2. Second database: [350 000+ movies from themoviedb.org](https://www.kaggle.com/stephanerappeneau/350-000-movies-from-themoviedborg)
 
 #### Softwares
 Softwares and libraries used:
@@ -50,7 +50,7 @@ top10.py
 ```
 > For performance purposes, we are using the database of 5000 movies, an extract of the much bigger database.
 
-The user is asked to input genre(s) (up to five different genres: Action, Adventure, Romance etc.) and era(s) (up to five, from the 10s to late 2010) and the program will display a table showing movie titles, average score by users from TMDB and list of genre(s) thanks to tabulate library.
+Using the `tmdb_5000_movies.csv` database, the user is asked to input genre(s) (up to five different genres: Action, Adventure, Romance etc.) and era(s) (up to five, from the 10s to late 2010) and the program will display a table showing movie titles, average score by users from TMDB and list of genre(s) thanks to tabulate library.
 If run on Jupyter Notebook, the rest of the code will display a table in HTML format with the addition of movie posters taken from IMDB website.
 
 > The HTML library is unstable and error for displaying movie posters may occur.
@@ -58,6 +58,10 @@ If run on Jupyter Notebook, the rest of the code will display a table in HTML fo
 ### Webinterface
 
 ### Prediction model
+
+> For more accuracy, we are using the full database
+
+Using the `AllMoviesDetailsCleaned.csv` joined with the `AllMoviesCastingRaw.csv` databases, we dseigned a prediction model using the scikit library.
 
 ## Deployment
 
