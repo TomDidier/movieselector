@@ -4,58 +4,62 @@ A project to get the ten best movies in one genre, from chosen period of time, o
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
 Two databases need to be install from Kaggle:
-Metadata on ~5,000 movies from TMDB: https://www.kaggle.com/tmdb/tmdb-movie-metadata
-Metadata on over 45,000 movies. 26 million ratings from over 270,000 users : 
+* **Metadata on ~5,000 movies from TMDB: https://www.kaggle.com/tmdb/tmdb-movie-metadata** 
+* **Metadata on over 45,000 movies. 26 million ratings from over 270,000 users : 
 https://www.kaggle.com/rounakbanik/the-movies-dataset
+** 
 
 Softwares and libraries used:
-Python:
-Pandas
-Ast
-Tabulate
-Matplotlib
-Numpy
-Scipy
-Sklearn
+Python 3.7:
+*Pandas
+*Ast
+*Tabulate
+*Matplotlib
+*Numpy
+*Scipy
+*Sklearn
+*IPython.display
 
-It is advised to run top10.py on Jupyter Notebook.
+Visual Studio Code
+It is advised to run the script top10.py on Jupyter Notebook.
 
 ### Installing
 
-Download the databases from sources
-Download top10.py
+Download the databases from the Prerequisite section
 
-## Running the tests
-
-
-
-### Break down into end to end tests
-
-Matplotlib_scatter_plot.py : by running this file, you can have an overview of how the budget invested in movies is correlated to the average vote viewers will give. It is a visual representation of the database
+## Project
+### Graphs
 
 ```
-The scatter plot shows that the correlation looks like a Gauss curve with an average vote at 6/10
+Matplotlib_scatter_plot.py
+```
+By running this file, you can have an overview of how the budget invested in movies is correlated to the average vote viewers will give. It is a visual representation of the database. The scatter plot shows that the correlation looks like a Gauss curve with an average vote at 6/10
+
+### Displaying the top10 movies from chosen genre(s) and decade(s) 
+```
+top10.py 
+```
+```
+For performance purposes, we are using the database of 5000 movies, an extract of the much bigger database.
+```
+The user is asked to input genre(s) (up to five different genres: Action, Adventure, Romance etc.) and era(s) (up to five, from the 10s to late 2010) and the program will display a table showing movie titles, average score by users from TMDB and list of genre(s) thanks to tabulate library.
+If run on Jupyter Notebook, the rest of the code will display a table in HTML format with the addition of movie posters taken from IMDB website.
+
+```
+The HTML library is unstable and error for displaying movie posters may occur.
 ```
 
-### And coding style tests
+### Webinterface
 
-Explain what these tests test and why
-
-```
-Give an example
-```
+### Prediction model
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+We are running Python 3.7
 
 
 ## Authors
@@ -66,13 +70,11 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the ESSEC license
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Python Programming class
 
 
 
