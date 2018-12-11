@@ -23,22 +23,22 @@ Scipy
 Sklearn
 
 It is advised to run top10.py on Jupyter Notebook.
+
 ### Installing
 
 Download the databases from sources
 Download top10.py
 
-
 ## Running the tests
 
-Explain how to run the automated tests for this system
+
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
+Matplotlib_scatter_plot.py : by running this file, you can have an overview of how the budget invested in movies is correlated to the average vote viewers will give. It is a visual representation of the database
 
 ```
-Give an example
+The scatter plot shows that the correlation looks like a Gauss curve with an average vote at 6/10
 ```
 
 ### And coding style tests
@@ -63,6 +63,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 * **Caroline Chen** 
 * **Tom Didier** 
 * **Valentin Karimpour** 
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
