@@ -7,11 +7,13 @@ A project to get the ten best movies in one genre, from chosen period of time, o
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
+#### Sources
 Two databases need to be install from Kaggle:
 
 1. First database: [Metadata on 5,000 movies from TMDB](https://www.kaggle.com/tmdb/tmdb-movie-metadata)
 2. Second database: [Metadata on over 45,000 movies. 26 million ratings from over 270,000 users](https://www.kaggle.com/rounakbanik/the-movies-dataset)
 
+#### Softwares
 Softwares and libraries used:
 
 Python 3.7:
