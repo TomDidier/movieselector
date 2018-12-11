@@ -18,7 +18,7 @@ Two databases need to be install from Kaggle:
 #### Softwares
 Softwares and libraries used:
 
-Python 3.7:
+1. Python 3.7:
 * Pandas
 * Ast
 * Tabulate
@@ -28,9 +28,9 @@ Python 3.7:
 * Sklearn
 * IPython.display
 
-Visual Studio Code
+2. Visual Studio Code
 
-Jupyter Notebook
+3. Jupyter Notebook
 
 It is advised to run the script top10.py on Jupyter Notebook.
 
