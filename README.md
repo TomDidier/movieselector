@@ -8,9 +8,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 Two databases need to be install from Kaggle:
-* **Metadata on ~5,000 movies from TMDB: https://www.kaggle.com/tmdb/tmdb-movie-metadata** 
-* Metadata on over 45,000 movies. 26 million ratings from over 270,000 users : 
-https://www.kaggle.com/rounakbanik/the-movies-dataset
+
+* **[Metadata on ~5,000 movies from TMDB] (https://www.kaggle.com/tmdb/tmdb-movie-metadata)** 
+* [Metadata on over 45,000 movies. 26 million ratings from over 270,000 users] 
+(https://www.kaggle.com/rounakbanik/the-movies-dataset)
 
 
 Softwares and libraries used:
