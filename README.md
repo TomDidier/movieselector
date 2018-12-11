@@ -58,6 +58,17 @@ If run on Jupyter Notebook, the rest of the code will display a table in HTML fo
 > The HTML library is unstable and error for displaying movie posters may occur.
 
 ### Webinterface
+```
+movieselector.py
+selectmoviebis.html
+style.css
+action.png, adventure.png, crime.png, western.png, war.png, mystery.png, tvmovie.png, thriller.png, music.png, horror.png, history.png, romance.png, drama.png, animation.png, documentary.png, family.png, fantasy.png, foreign.png, comedy.png
+```
+> We use also the database of 5000 movies.
+
+By running this code, it will display a web interface which asks the user to choose one genre and returns the ten best movies in this genre in the database.
+
+> Science Fiction and TV Movie don't work because of the space separating the two words.
 
 ### Prediction model
 
