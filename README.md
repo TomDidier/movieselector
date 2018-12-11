@@ -10,8 +10,10 @@ These instructions will get you a copy of the project up and running on your loc
 #### Sources
 Two databases need to be install from Kaggle:
 
-1. First database: [Metadata on 5,000 movies from TMDB](https://www.kaggle.com/tmdb/tmdb-movie-metadata)
-2. Second database: [350 000+ movies from themoviedb.org](https://www.kaggle.com/stephanerappeneau/350-000-movies-from-themoviedborg)
+| Databases     | Usages        
+| ------------- |:-------------:| 
+| [Metadata on 5,000 movies from TMDB](https://www.kaggle.com/tmdb/tmdb-movie-metadata)    | Web interface, TOP10, graphs | 
+| [350 000+ movies from themoviedb.org](https://www.kaggle.com/stephanerappeneau/350-000-movies-from-themoviedborg)      | Prediction model      | 
 
 #### Softwares
 Softwares and libraries used:
