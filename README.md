@@ -64,22 +64,45 @@ selectmoviebis.html
 style.css
 action.png, adventure.png, crime.png, western.png, war.png, mystery.png, tvmovie.png, thriller.png, music.png, horror.png, history.png, romance.png, drama.png, animation.png, documentary.png, family.png, fantasy.png, foreign.png, comedy.png
 ```
-> We use also the database of 5000 movies.
+> We use also the database `tmdb_5000_movies.csv` of 5000 movies.
 
 By running this code, it will display a web interface which asks the user to choose one genre and returns the ten best movies in this genre in the database.
 
-> Science Fiction and TV Movie don't work because of the space separating the two words.
+> Science Fiction and TV Movie do not work because of the space separating the two words.
 
 ### Prediction model
 
-> For more accuracy, we are using the full database
+> For more accuracy, we are using the full database of +350,000 movies
 
-Using the `AllMoviesDetailsCleaned.csv` joined with the `AllMoviesCastingRaw.csv` databases, we dseigned a prediction model using the scikit library.
+Using the `AllMoviesDetailsCleaned.csv` database, we designed two prediction models using the scikit library. 
+1. Model predicting revenue
+2. Model predicting if the movie will be a success (average score by users > 5 out of 10)
+
+
+#### Model parameters
+The model chosen is the Random Forest Classifier from scikit library.
+Parameters determining the outcome of the predictions are:
+* adult (if the movie audience is not children): boolean value
+* budget: numerical value
+* genres
+* original language: string of character
+* release date (YYYY-MM-DD): it is common knowledge the month and weekday of the movie release greatly influence its success
+* runtime
+
+To predict following outcomes:
+* revenue: we did not take into account inflation
+* vote average
+
+#### Preprocessing
+
+- Categorical values were transformed into numerical values (1 or 0) thanks to functions like get_dummies from pandas.
+- Date values were analysed thanks to datetime library, we extracted the year, the month and the weekday of the release date.
+- Boolean values were transformed into numerical values thanks to LabelBinarizer() function in the preprocessing package of scikit library.
 
 ## Deployment
 
-We are running Python 3.7
-
+We are running Python 3.7.
+Errors can be found in the web interface and the second predictive model.
 
 ## Authors
 
