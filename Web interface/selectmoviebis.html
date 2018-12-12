@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>Movies generator</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <div class="instruction">
+            <h1>Movie Selector</h1>
+            <h2>Choose the film you want to watch</h2>
+        </div>
+
+        <div class="Choice {% if not newChoice %}disabled{% endif %}">
+            <div>
+                <h3>Choose one genre</h3>
+                <div class="box user">
+                    <a class="Action {% if genres.Action %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/Action"{% endif %}>
+                        <p>Action</p>
+                    </a>
+                    <a class="Adventure {% if genres.Adventure %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/Adventure"{% endif %}>
+                        <p>Adventure</p>
+                    </a>
+                    <a class="Drama {% if genres.Drama %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/Drama"{% endif %}>
+                        <p>Drama</p>
+                    </a>
+                    <a class="ScienceFiction {% if genres.ScienceFiction %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/ScienceFiction" {% endif %}>
+                        <p>Science Fiction</p>
+                    </a>
+                    <a class="Music {% if genres.Music %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/Music" {% endif %}>
+                        <p>Music</p>
+                    </a>
+                    <a class="Crime {% if genres.Crime %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/Crime" {% endif %}>
+                        <p>Crime</p>
+                    </a>
+                    <a class="History {% if genres.History %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/History"{% endif %}>
+                        <p>History</p>
+                    </a>
+                    <a class="Animation {% if genres.Animation %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/Animation"{% endif %}>
+                        <p>Animation</p>
+                    </a>
+                    <a class="Thriller {% if genres.Thriller %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/Thriller"{% endif %}>
+                        <p>Thriller</p>
+                    </a>
+                    <a class="Fantasy {% if genres.Fantasy %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/Fantasy"{% endif %}>
+                        <p>Fantasy</p>
+                    </a>
+                </div>
+
+                <div class="box user">
+                    <a class="Family {% if genres.Family %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/Family"{% endif %}>
+                        <p>Family</p>
+                    </a>
+                    <a class="TVMovie {% if genres.TVMovie %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/TVMovie"{% endif %}>
+                        <p>TV Movie</p>
+                    </a>
+                    <a class="Horror {% if genres.Horror %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/Horror"{% endif %}>
+                        <p>Horror</p>
+                    </a>
+                    <a class="War {% if genres.War %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/War"{% endif %}>
+                        <p>War</p>
+                    </a>
+                    <a class="Comedy {% if genres.Comedy %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/Comedy"{% endif %}>
+                        <p>Comedy</p>
+                    </a>
+                    <a class="Mystery {% if genres.Mystery %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/Mystery"{% endif %}>
+                        <p>Mystery</p>
+                    </a>
+                    <a class="Foreign {% if genres.Foreign %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/Foreign"{% endif %}>
+                        <p>Foreign</p>
+                    </a>
+                    <a class="Western {% if genres.Western %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/Western"{% endif %}>
+                        <p>Western</p>
+                    </a>
+                    <a class="Romance {% if genres.Romance %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/Romance"{% endif %}>
+                        <p>Romance</p>
+                    </a>
+                    <a class="Documentary {% if genres.Documentary %}selected{% endif %}"
+                    {%if newChoice %} href="/choice/Documentary"{% endif %}>
+                        <p>Documentary</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        {%if not newChoice%}
+        <div class="result">
+            <p>Voici les meilleurs films dans ces genres : {{selectedfilm}}</p>
+            <a href="/">Choose another film</a>
+        </div>
+        {% endif %}
+    </body>
+</html>
